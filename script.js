@@ -1,4 +1,3 @@
-// script.js
 let currentIndex = 0;
 
 function showSlide(index) {
@@ -19,4 +18,24 @@ function prevSlide() {
   showSlide(currentIndex - 1);
 }
 
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 5000); // Auto-slide every 5s
+
+// Header auto-hide logic
+const header = document.getElementById('main-header');
+let headerTimer;
+
+function showHeader() {
+  header.classList.add('visible');
+  clearTimeout(headerTimer);
+  headerTimer = setTimeout(() => {
+    header.classList.remove('visible');
+  }, 3000); // Hide after 3 seconds
+}
+
+document.addEventListener('mousemove', (e) => {
+  if (e.clientY < 80) {
+    showHeader();
+  }
+});
+
+header.addEventListener('mouseenter', showHeader);

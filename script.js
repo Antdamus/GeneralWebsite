@@ -20,7 +20,7 @@ function prevSlide() {
 
 setInterval(nextSlide, 5000); // Auto-slide every 5s
 
-// Header auto-hide logic
+// Header auto-show and hide
 const header = document.getElementById('main-header');
 let headerTimer;
 
@@ -29,7 +29,7 @@ function showHeader() {
   clearTimeout(headerTimer);
   headerTimer = setTimeout(() => {
     header.classList.remove('visible');
-  }, 3000); // Hide after 3 seconds
+  }, 3000); // Auto-hide after 3 seconds
 }
 
 document.addEventListener('mousemove', (e) => {

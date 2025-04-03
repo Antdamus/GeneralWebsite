@@ -3,7 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stats and more</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hover-header" id="main-header">
+    <h1>Stats and more</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Bayesian</a>
+      <a href="#">Frequentist</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <div class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide">
+        <img src="https://via.placeholder.com/800x300?text=Bayesian+Inference" alt="Bayesian">
+        <h2>Bayesian Inference</h2>
+        <p>Explore the world of probability and prior beliefs.</p>
+      </div>
+      <div class="slide">
+        <img src="https://via.placeholder.com/800x300?text=Frequentist+Methods" alt="Frequentist">
+        <h2>Frequentist Methods</h2>
+        <p>Learn hypothesis testing and confidence intervals.</p>
+      </div>
+      <div class="slide">
+        <img src="https://via.placeholder.com/800x300?text=Statistics+Shop" alt="Shop">
+        <h2>Visit Our Shop</h2>
+        <p>Books, posters, and more for stats lovers.</p>
+      </div>
+    </div>
+    <div class="carousel-buttons">
+      <button onclick="prevSlide()">&#10094;</button>
+      <button onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Statistical Insights</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
